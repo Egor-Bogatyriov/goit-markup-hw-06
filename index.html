@@ -430,15 +430,37 @@
     </div>
     </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidde" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="svg-btn">
                     <use href="./images/icon-svg/sprite.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#" class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="label-input">Имя</label>
+                    <input 
+                        type="text" name="user-name" id="user-name" class="modal-input">
+                </div>
+                <div class="modal-field">
+                    <label for="user-name" class="label-input">Телефон</label>
+                    <input type="text" name="user-tel" id="user-tel" class="modal-input">
+                </div>
+                <div class="modal-field">
+                    <label for="user-name" class="label-input">Почта</label>
+                    <input type="text" name="user-email" id="user-email" class="modal-input">
+                </div>
+                <div class="modal-field">
+                    <label for="user-text" class="label-input">Комментарий</label>
+                    <textarea name="user-text" id="user-text" class="modal-comments" placeholder="Введите текст"></textarea>
+                </div>
+
+                <button type="submit" class="hero-btn modal-btn">Отправить</button>
+            </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
