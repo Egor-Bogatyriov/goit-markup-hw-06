@@ -53,6 +53,17 @@ body {
   list-style: none;
 }
 
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -157,6 +168,11 @@ body {
   height: 18px;
 }
 
+.svg-btn:hover,
+.svg-btn:focus {
+  fill: var(--cursor-text-color);
+}
+
 .modal-title {
   font-weight: bold;
   font-size: 20px;
@@ -191,6 +207,20 @@ body {
 
   padding-left: 42px;
   padding-right: 20px;
+  outline: none;
+}
+
+.modal-input:focus,
+.modal-input:hover {
+  border-color: var(--cursor-text-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--cursor-text-color);
+}
+
+.modal-input:hover + .input-icon {
+  fill: var(--cursor-text-color);
 }
 
 .modal-field {
@@ -205,6 +235,61 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.input-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chek-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  color: var(--secondaty-text-color);
+  margin-bottom: 30px;
+
+  display: flex;
+}
+
+.chek-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--secondaty-title-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 8px;
+}
+
+.chekbox:checked + .chek-text span {
+  background-color: var(--cursor-text-color);
+  border: none;
+}
+
+.conditions-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: var(--cursor-text-color);
 }
 
 /* --------студия---------- */
@@ -416,6 +501,44 @@ body {
 .social-link-footer:hover .socail-icon-footer,
 .social-link-footer:focus {
   fill: var(--primary-white-color);
+}
+
+.footer-email-form {
+  display: flex;
+}
+
+.footer-email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: var(--primary-title-color);
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+}
+
+.footer-send-form {
+  position: relative;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
 }
 
 /* главная часть - студия */
