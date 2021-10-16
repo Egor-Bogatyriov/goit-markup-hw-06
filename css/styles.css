@@ -527,9 +527,7 @@ body {
 .footer-btn {
   width: 200px;
   height: 50px;
-}
-
-.footer-send-form {
+  display: flex;
   position: relative;
 }
 
@@ -582,7 +580,7 @@ body {
 }
 
 .hero-btn {
-  display: block;
+  display: flex;
   margin-right: auto;
   margin-left: auto;
 
