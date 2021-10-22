@@ -278,6 +278,10 @@ body {
   margin-bottom: 30px;
 
   display: flex;
+  align-items: center;
+
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .chek-text span {
@@ -289,8 +293,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-right: 8px;
 }
 
 .chekbox:checked + .chek-text span {
@@ -311,6 +313,16 @@ body {
   text-decoration-line: underline;
 
   color: var(--cursor-text-color);
+}
+
+.chek-icon {
+  width: 15px;
+  height: 16px;
+}
+
+.chekbox .visual-hidden:focus,
+.chekbox .visual-hidden:hover {
+  border-color: var(--cursor-text-color);
 }
 
 /* --------студия---------- */
